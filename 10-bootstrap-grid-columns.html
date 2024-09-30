@@ -1,52 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Bootstrap Grid Columns</h1>
 
-      <!-- Basic Grid Layout -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Bootstrap Grid Columns</h1>
 
-      <!-- Column Sizes -->
-
-      <br /><br />
-
-      <!-- Responsive Grid -->
-
-      <br /><br />
-
-      <!-- Row Cols -->
-
-      <br /><br />
-
-      <br /><br />
-
-      <!-- Nesting -->
-
-      <br /><br />
-
-      <!-- Gutters -->
-
-      <br /><br />
-
-      <!-- Offsetting Columns -->
-
-      <br /><br />
-
-      <!-- Ordering -->
-
-      <!-- Don't go past here -->
+    <!-- Basic Grid Layout -->
+    <div class="row">
+      <div class="col bg-light border">1</div>
+      <div class="col bg-light border">2</div>
+      <div class="col bg-light border">3</div>
     </div>
-    <div style="margin-top: 350px"></div>
+    <div class="row">
+      <div class="col bg-light border">4</div>
+      <div class="col bg-light border">5</div>
+      <div class="col bg-light border">6</div>
+    </div>
+    <br /><br />
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Column Sizes -->
+    <div class="row">
+      <div class="col-1 bg-light border">1</div>
+      <div class="col-11 bg-light border">2</div>
+    </div>
+
+    <br /><br />
+
+    <!-- Responsive Grid -->
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">1</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">2</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">3</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">4</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">5</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">6</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">7</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">8</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">9</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">10</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">11</div>
+      <div class="col-sm-6 col-md-4 col-lg-1 bg-light border">12</div>
+
+    </div>
+
+
+    <br /><br />
+
+    <!-- Row Cols -->
+    <div class="row row-cols-1 row-cols-sm-6 row-cols-md-4">
+      <div class="col bg-light border">Colum</div>
+      <div class="col bg-light border">Colum</div>
+      <div class="col bg-light border">Colum</div>
+      <div class="col bg-light border">Colum</div>
+      <div class="col bg-light border">Colum</div>
+      <div class="col bg-light border">Colum</div>
+    </div>
+
+    <br /><br />
+
+    <br /><br />
+
+    <!-- Nesting -->
+
+    <div class="row">
+      <div class="col bg-light border pb-3"></div>
+      <div class="col bg-light border pb-3"></div>
+      <div class="col bg-light border pb-3">
+        <div class="row">
+          <div class="col text-bg-dark">Nest</div>
+          <div class="col text-bg-dark">Nest</div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <!-- Gutters -->
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content item</div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content item</div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content item</div>
+      </div>
+    </div>
+
+
+    <br /><br />
+
+    <!-- Offsetting Columns -->
+    <div class="row">
+      <div class="col-md-4 offset-4">
+        <div class="p-3 text-bg-primary">Content item</div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content item</div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <!-- Ordering -->
+     <div class="row">
+      <div class="col bg-light border order-3">Colum 1</div>
+      <div class="col bg-light border order-2">Colum 2</div>
+      <div class="col bg-light border order-1">Colum 3</div>
+     </div>
+
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
