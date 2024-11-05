@@ -1,38 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Dropdowns</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Dropdowns</h1>
 
-      <!-- Single Button -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Dropdowns</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Dropdowns</h1>
 
-      <!-- Split Button -->
+    <!-- Single Button -->
 
-      <br /><br />
-
-      <!-- Dark Dropdowns -->
-
-      <br /><br />
-
-      <!-- Dropup -->
-
-      <br /><br />
-
-      <!-- Navbar with Dropdown -->
-
-      <!-- Don't go past here -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Item 1</a></li>
+        <li><a href="#" class="dropdown-item">Item 2</a></li>
+        <li><a href="#" class="dropdown-item">Item 3</a></li>
+        <li><a href="#" class="dropdown-item">Item 4</a></li>
+      </ul>
     </div>
-    <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <br /><br />
+
+    <!-- Split Button -->
+    <div class="btn-group">
+      <button class="btn btn-danger">Action</button>
+      <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Item 1</a></li>
+        <li><a href="#" class="dropdown-item">Item 2</a></li>
+        <li><a href="#" class="dropdown-item">Item 3</a></li>
+        <li><a href="#" class="dropdown-item">Item 4</a></li>
+      </ul>
+    </div>
+
+
+    <br /><br />
+
+    <!-- Dark Dropdowns -->
+
+    <div class="btn-group">
+      <button class="btn btn-danger">Action</button>
+      <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a href="#" class="dropdown-item">Item 1</a></li>
+        <li><a href="#" class="dropdown-item">Item 2</a></li>
+        <li><a href="#" class="dropdown-item">Item 3</a></li>
+        <li><a href="#" class="dropdown-item">Item 4</a></li>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <!-- Dropup -->
+    <div class="btn-group dropup">
+      <button class="btn btn-danger">DropUp</button>
+      <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Item 1</a></li>
+        <li><a href="#" class="dropdown-item">Item 2</a></li>
+        <li><a href="#" class="dropdown-item">Item 3</a></li>
+        <li><a href="#" class="dropdown-item">Item 4</a></li>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <!-- Navbar with Dropdown -->
+    <nav class="navbar navbar-expand-md bg-light">
+      <!-- Cria um elemento de navegação com a classe 'navbar', que expande em dispositivos médios e tem um fundo claro -->
+      <div class="container">
+        <!-- Adiciona um contêiner para centralizar o conteúdo dentro da barra de navegação -->
+        <a href="#" class="navbar-brand">Navbar</a>
+        <!-- Link para a marca da navbar, geralmente usado para o nome do site ou logo -->
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
+          <!-- Botão para colapsar/expandir o menu em telas menores -->
+          <span class="navbar-toggler-icon">
+            <!-- Ícone do botão para colapsar a navbar -->
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Div que contém os itens da navbar, que pode ser colapsada em telas menores -->
+          <ul class="navbar-nav ms-auto">
+            <!-- Lista de navegação com alinhamento à direita (ms-auto) -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+              <!-- Item de navegação para a página inicial -->
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+              <!-- Item de navegação para a página "Sobre" -->
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+              <!-- Item de navegação para a página de contato -->
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+              <!-- Item de navegação para a página de serviços -->
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">Item 1</li>
+                <li class="dropdown-item">Item 2</li>
+                <li class="dropdown-item">Item 3</li>
+                <li class="dropdown-item">Item 4</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
